@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+header{
+    height: 60px;
+    width: 100%;
+    background-color: #277797ab;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ nav{
+    display: flex;
+} 
+.nav-list{
+    display: none;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+    font-weight: 450;
+}
+
+#loginForm {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    width: 300px;
+}
+
+#loginForm input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#loginForm button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitBtn {
+    background: #4CAF50;
+    color: white;
+}
+
+#closeBtn {
+    background: #f44336;
+    color: white;
+}
+
+#loginBtn {
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius:8px;
+}
+
+#loginBtn:hover {
+    background: #f0f0f0;
+}
+
+
+.logo{
+    font-size: 20px;
+}
+.hero{
+   width: 100%;
+   background: url(main.png); 
+   height: 400px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   color: rgb(19, 18, 18);
+   text-align: center;
+   padding-top:100px ;
+   margin-bottom: 20px;
+
+}
+.hero h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.hero p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.searchbox{
+    max-width: 550px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.searchbox input{
+    width: 70%;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+    border: 1px solid rgb(220, 64, 64);
+}
+.searchbox button{
+    padding: 10px 20px;
+    outline: none;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    font-size: 1rem;
+    background-color: rgb(220, 64, 64);
+    color: white;
+    cursor: pointer;
+}
+.recipes{
+    padding: 50px 0;
+}
+.recipes h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 38px;
+}
+.recipesection{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    column-gap: 10px; 
+}
+.recipe-card{
+    background: white;
+    margin: 30px 10px;
+    border-radius:8px;
+    border: 1px solid rgb(180, 154, 154);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.recipe-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* border-top-left-radius: 8px ;
+    border-top-right-radius: 8px; */
+}
+.recipe-card h2{
+    font-size: 22px;
+    padding: 20px 20px;
+    font-style: italic;
+}
+.recipe-card p{
+    font-size: 18px;
+    padding: 20px 20px;
+}
+.recipe-card a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #165d5ba6;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+}
+footer{
+    background: #333;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+.menu{
+    font-size: 20px;
+    padding: 20px;
+    text-align: right;
+    display: block;
+    cursor: pointer;
+}
+@media only screen and (min-width:768px){
+     .menu{
+        display: none;
+     }
+     .nav-list{
+        display: block;
+     }
+}
+@media only screen and (max-width:768px){
+     .hero h2{
+        font-size: 28px;
+     }
+     .hero p{
+        font-size: 15px;
+     }
+}
+
+/* Add these to your existing CSS */
+
+/* Mobile navigation styles */
+/* ===== ENHANCED STYLES FOR JAVASCRIPT FEATURES ===== */
+.nav-list {
+    display: none;
+}
+
+@media only screen and (min-width:768px){
+    .menu {
+        display: none;
+    }
+    
+    .nav-list {
+        display: flex !important;
+        position: static !important;
+        background-color: transparent !important;
+        padding: 0 !important;
+        width: auto !important;
+        flex-direction: row !important;
+    }
+}
+
+/* Animation for recipe cards */
+.recipe-card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Favorite hearts */
+.favorite-heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.favorite-heart:hover {
+    transform: scale(1.2);
+}
+
+.favorite-heart.favorited {
+    color: #e74c3c;
+}
+
+/* Search results indicator */
+#search-results-indicator {
+    text-align: center;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    font-style: italic;
+    color: #6c757d;
+}
+
+/* Clear search button */
+#clear-search-btn {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#clear-search-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Notification style */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.3s ease;
+}
+
+.notification.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Active state for navigation */
+.nav-list li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-list li:hover {
+    color: #ffcc00;
+}
+
+/* Lazy loading for images */
+img {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+img.loaded {
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    #clear-search-btn {
+        margin-left: 5px;
+        padding: 10px;
+    }
+    
+    .searchbox {
+        flex-wrap: wrap;
+    }
+    
+    .searchbox input {
+        width: 60%;
+    }
+}
+
+/* Animation for menu toggle */
+.menu {
+    transition: transform 0.3s ease;
+}
+
+.menu:hover {
+    transform: scale(1.1);
+}

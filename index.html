@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">FlavorVault</h1>
+        <nav>
+          <div class="menu">&#9776;</div>
+          <ul class="nav-list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Recipes</li>
+            <li>Contact</li>
+          </ul>
+          <button id="loginBtn" type="button">&#128100;</button>
+          <!-- Changed to loginBtn -->
+          <div id="loginForm" style="display: none">
+            <h3>Login Here</h3>
+            <input type="text" placeholder="Username" id="username" />
+            <input type="password" placeholder="Password" id="password" />
+            <button id="submitBtn">Submit</button>
+            <button id="closeBtn">Close</button>
+            <!-- Added close button -->
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero-section">
+        <h2>Welcome to our recipe collection!!</h2>
+        <p>Search mouth watering recipes to satisfy your cravings</p>
+        <form action="#" class="searchbox">
+          <input type="text" placeholder="Search Recipe" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+    <section class="recipes">
+      <h1>Featured Recipes</h1>
+      <div class="recipesection">
+        <div class="recipe-card">
+          <img src="image.png" alt="" />
+          <h2>Blush Berry Custard</h2>
+          <p>
+            Experience a dessert of pure elegance with our silken vanilla
+            custard, crowned with a layer of macerated strawberries. Each
+            spoonful offers a luxurious contrast between the rich, creamy base
+            and the bright, juicy burst of berry goodness. It's a simple yet
+            sophisticated finale to any meal.
+          </p>
+          <a href=""> View Recipe</a>
+        </div>
+        <div class="recipe-card">
+          <img src="pasta.png" alt="" />
+          <h2>Pasta Paradise</h2>
+          <p>
+            Dive into a bowl of perfectly al dente pasta, coated in a rich,
+            slow-simmered tomato sauce. Each forkful is a comforting embrace of
+            garlic, herbs, and the unmistakable flavor of sun-ripened tomatoes.
+            It’s a simple, satisfying dish that feels like home. It's a simple
+            dish.
+          </p>
+          <a href=""> View Recipe</a>
+        </div>
+        <div class="recipe-card">
+          <img src="biryani.png" alt="" />
+          <h2>Biryani Bliss</h2>
+          <p>
+            Savor the magic of perfectly steamed rice and succulent meat,
+            marinated in yogurt and spices, then slow-cooked to perfection in
+            the classic dum style. The result? A burst of aromatic flavors in
+            every bite, with tender meat and fragrant rice that melt in your
+            mouth. It is one of the best dish.
+          </p>
+          <a href=""> View Recipe</a>
+        </div>
+        <div class="recipe-card">
+          <img src="quinoa.png" alt="" />
+          <h2>Quinoa Love</h2>
+          <p>
+            Fuel your body with this nutrient-dense superfood, known for its
+            complete protein and fluffy, delicate texture. Tossed with fresh
+            vegetables and a zesty dressing, it’s a wholesome, gluten-free meal
+            that’s as satisfying as it is healthy. Perfect for a light yet
+            energizing lunch or dinner.
+          </p>
+          <a href=""> View Recipe</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <p>&copy; Delicious Recipes</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
